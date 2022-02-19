@@ -1,9 +1,9 @@
 
 :root{
     --letter-color: #F0F7F5;
-    --background-color-navbar:linear-gradient(#78909C, #455A64 , #263238);
-    --second-color:#93CCB8;
-} 
+    --background-color-navbar:#263238;
+    --second-color:#00feef;
+}
 
 
 *{
@@ -36,7 +36,7 @@
 .navbar-search{
     margin-top: 5px;
     width: 100%;
-    
+
 }
 
 .navbar-search input[type="text"]{
@@ -46,13 +46,13 @@
     border-top-right-radius: 0px !important;
     border-bottom-right-radius: 0px !important;
     border-right: none !important;
-    border: 2px solid rgb(135, 198, 235);
     border-radius: 5px;
-    border-right: 0.5px solid rgb(196, 194, 194);
+    border: none;
     color: #000;
     outline: none;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
     position: relative;
-    
+
 }
 
 .btn-search{
@@ -66,14 +66,15 @@
     border-left-color: #d8dbdb !important;
     color: #000;
     outline: none;
-    border: 2px solid rgb(135, 198, 235);
+    /* border: 2px solid rgb(135, 198, 235); */
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
     border-radius: 5px;
     position: absolute;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 0px;  
-    
+    padding: 0px;
+
 }
 
 #icon-search{
@@ -82,9 +83,12 @@
 
 }
 
+#icon-search:hover{
+    cursor: pointer;
+}
 
-.nav-menu,
-.nav-menu-user{
+
+.nav-menu{
     display: inline-block;
     margin: 0 auto;
     position: absolute;
@@ -96,24 +100,29 @@
 }
 
 
-.nav-menu-list{
+.nav-menu ul{
     position: relative;
     padding: 0px;
     margin: 0 auto;
 }
 
-.nav-menu-list li{
+.nav-menu ul li{
     display: inline-block;
     margin-right: 15px;
     color: white;
     padding: 0px;
     font-size: 12px;
-    
+
 }
 
-.nav-menu-list li a{
+.nav-menu ul li a{
     text-decoration: none;
     color: white;
+    border-color: #93CCB8 !important;
+}
+
+.nav-menu ul li a:hover{
+    color: var(--second-color) !important;
 }
 
 .li-float-right{
@@ -124,15 +133,10 @@
 }
 
 
-.nav-menu-user-item li{
-    float: right;
-}
 
 .logo{
-    width: 140px;
-    position: fixed;
-    left: 350px;
-    top: -10px
-    
+    width: 150px;
+    position: relative;
+    margin-right: 20px;
 }
 
