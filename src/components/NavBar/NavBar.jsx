@@ -3,7 +3,7 @@ import './NavBar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import Logo from "./img/logo.png";
-
+import CartWidget from '../CartWidget/CartWidget';
 // import { Navbar, Container, Nav, NavDropdown, Form, FormControl, Button } from "react-bootstrap";
 
 
@@ -25,8 +25,9 @@ function NavBar() {
                         <li><a href='##'>Inicio</a></li>
                         <li><a href='##'>Categorías</a></li>
                         <li><a href='##'>Ofertas</a></li>
-                        <li className='li-float-right'><a href='##'>Ingresar</a></li>
                         <li className='li-float-right'><a href='##'>Registrarse</a></li>
+                        <li className='li-float-right'><a href='##'>Ingresar</a></li>
+                        <li className='li-float-right'><a href="##"><CartWidget /></a></li>
                     </ul>
 
                 </div>
@@ -42,4 +43,4 @@ function NavBar() {
     )
 }
 
-export default NavBar
+export default NavBar;
