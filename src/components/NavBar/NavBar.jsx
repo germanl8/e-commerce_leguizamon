@@ -27,7 +27,7 @@ function NavBar() {
                         <li><a href='##'>Ofertas</a></li>
                         <li className='li-float-right'><a href='##'>Registrarse</a></li>
                         <li className='li-float-right'><a href='##'>Ingresar</a></li>
-                        <li className='li-float-right'><a href="##"><CartWidget /></a></li>
+                        <li className='li-float-right'><a href="##"><CartWidget/></a></li>
                     </ul>
 
                 </div>

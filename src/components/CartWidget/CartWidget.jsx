@@ -6,7 +6,7 @@ function CartWidget() {
 
     return (
 
-            <div id='cartshopping' className='circle-icon'>
+            <div>
                 <FontAwesomeIcon icon={faCartShopping} id="icon-cart" />
             </div>
 

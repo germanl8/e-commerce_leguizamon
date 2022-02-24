@@ -14,12 +14,13 @@
 
 
 #icon-cart{
-    margin-top: 3px;
     color: var(--third-color);
-    width: 15px;
-    height: 15px;
+    width: 17px;
+    height: 17px;
+    vertical-align: -4px;
 }
 
 #icon-cart:hover{
     color: var(--second-color)
+    
 }
