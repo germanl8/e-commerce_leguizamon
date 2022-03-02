@@ -4,6 +4,7 @@
     --second-color:#00feef;
     --third-color:#00f894;
     --font-logo: Quicksand Bold;
+    --color-button: #263238;
 }
 
 .container-addcart{
@@ -14,6 +15,7 @@
     justify-content: center;
     margin: 0 auto;
     top: 135px;
+    
 }
 
 .container-btn-addCart, .container-count{
@@ -24,6 +26,14 @@
     justify-content: center;
 }
 
+.container-btn-addCart{
+    margin-top: 40px;
+}
+
+.container-count{
+    margin-bottom: 50px;
+}
+
 
 .container-count button, label{
     display: flex;
@@ -31,52 +41,48 @@
     align-items: center;
     justify-content: center;
     height: 40px;
-    margin-bottom: 50px;
-    width: 30px;
-    border-style:solid;
-    border-color: var(--background-color-navbar);
-    border-width: 1px;
+    border-color: var(--color-button);
     border-radius: 4px;
-    color:var(--background-color-navbar);
-   
+    color:var(--color-button);
+    background-color:transparent;
+    border-style:solid;
 }
 
 .count-lbl{
-    background-color:aliceblue;
     width: 240px;
     border-top-left-radius: 0px !important;
     border-bottom-left-radius: 0px !important;
     border-top-right-radius: 0px !important;
     border-bottom-right-radius: 0px !important;
-    border-left: none;
-    border-right: none;
-    color: var(--background-color-navbar);
-    font-size: 15px;
+    border-left: none !important;
+    border-right: none !important;
+    color: var(--color-button);
+    font-size: 20px;
+    border-width: 2px;
 }
 
 .removeCount{
+    width: 30px;
     border-top-right-radius: 0px !important;
     border-bottom-right-radius: 0px !important;
     border-right: none !important;
-    
-    color: white;
 }
 
 .addCount{
+    width: 30px;
     border-top-left-radius: 0px !important;
     border-bottom-left-radius: 0px !important;
     border-left: none !important;
-    
-    color: white;
 }
 
 
 .btn-addCart{
-    margin-top: 40px;
+    
     width: 300px;
     border-radius: 3px;
-    border-color: var(--background-color-navbar);
-    color:var(--background-color-navbar);
+    border-color: var(--color-button);
+    color:var(--color-button);
     font-size: 15px;
     height: 40px;
+    background-color: transparent;
 }
