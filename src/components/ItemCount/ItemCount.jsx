@@ -5,17 +5,17 @@ import { useState } from 'react'
 
 function ItemCount({ stock, initial, onAdd }) {
 
-    const [count, setCount] = useState(1)
-
     const mostrarCantidad = () => {
         console.log({ count });
-        console.log('el stock es' + stock );
+        console.log(`El stock es de ${stock} productos` );
     }
+
+    const [count, setCount] = useState(1)
 
     const addCount = () => {
         if (count < stock ) {
             setCount(count + 1)
-        }else alert('No hay stock disponible')
+        }else alert(`No puede seleccionar mas de ${stock} productos por disponibilidad de stock`)
     }
 
     const removeCount = () => {

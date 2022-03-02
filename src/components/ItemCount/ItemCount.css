@@ -4,7 +4,7 @@
     --second-color:#00feef;
     --third-color:#00f894;
     --font-logo: Quicksand Bold;
-    --color-button: #263238;
+    --color-button: rgb(238, 237, 237);
 }
 
 .container-addcart{
@@ -31,7 +31,7 @@
 }
 
 .container-count{
-    margin-bottom: 50px;
+    margin-bottom: 35px;
 }
 
 
@@ -43,9 +43,11 @@
     height: 40px;
     border-color: var(--color-button);
     border-radius: 4px;
-    color:var(--color-button);
+    color:var(--background-color-navbar);
     background-color:transparent;
     border-style:solid;
+    background-color: transparent;
+    font-weight: bold;
 }
 
 .count-lbl{
@@ -56,7 +58,6 @@
     border-bottom-right-radius: 0px !important;
     border-left: none !important;
     border-right: none !important;
-    color: var(--color-button);
     font-size: 20px;
     border-width: 2px;
 }
@@ -81,8 +82,9 @@
     width: 300px;
     border-radius: 3px;
     border-color: var(--color-button);
-    color:var(--color-button);
+    color:var(--background-color-navbar);
     font-size: 15px;
     height: 40px;
     background-color: transparent;
+    font-weight: bold;
 }
