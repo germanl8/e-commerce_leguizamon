@@ -26,3 +26,10 @@
     color: var(--background-color-navbar);
     
 }
+
+.container-items h1{
+
+    position: absolute;
+    
+
+}

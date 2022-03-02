@@ -1,0 +1,82 @@
+:root{
+    --letter-color: #F0F7F5;
+    --background-color-navbar:#263238;
+    --second-color:#00feef;
+    --third-color:#00f894;
+    --font-logo: Quicksand Bold;
+}
+
+.container-addcart{
+    position: relative;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    top: 135px;
+}
+
+.container-btn-addCart, .container-count{
+    position: absolute;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container-count button, label{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    margin-bottom: 50px;
+    width: 30px;
+    border-style:solid;
+    border-color: var(--background-color-navbar);
+    border-width: 1px;
+    border-radius: 4px;
+    color:var(--background-color-navbar);
+   
+}
+
+.count-lbl{
+    background-color:aliceblue;
+    width: 240px;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    border-left: none;
+    border-right: none;
+    color: var(--background-color-navbar);
+    font-size: 15px;
+}
+
+.removeCount{
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    border-right: none !important;
+    
+    color: white;
+}
+
+.addCount{
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    border-left: none !important;
+    
+    color: white;
+}
+
+
+.btn-addCart{
+    margin-top: 40px;
+    width: 300px;
+    border-radius: 3px;
+    border-color: var(--background-color-navbar);
+    color:var(--background-color-navbar);
+    font-size: 15px;
+    height: 40px;
+}
