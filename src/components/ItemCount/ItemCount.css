@@ -81,7 +81,9 @@
     
     width: 300px;
     border-radius: 3px;
-    border-color: var(--color-button);
+    border-color: rgb(238, 237, 237);
+    border-bottom-left-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
     color:var(--background-color-navbar);
     font-size: 15px;
     height: 40px;
