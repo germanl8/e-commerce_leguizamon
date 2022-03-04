@@ -1,0 +1,14 @@
+.card{
+    display: inline-block !important;
+    margin: 20px;
+    text-align: center;
+    background: transparent;
+    border-style:solid;
+    border-color: rgb(238, 237, 237);
+    border-width: 1px;
+    border-radius: 10px;
+    margin-bottom: 0px !important;
+    border-bottom: none !important;
+    width: 300px !important;
+    
+}
