@@ -5,7 +5,8 @@ import { useEffect } from "react";
 import ItemList from "../ItemList/ItemList";
 
 
-const ItemListContainer = ({ greeting, mostrarCantidad }) => {
+
+const ItemListContainer = ({ greeting }) => {
 
     const [productos, setProductos] = useState([])
     const [loading, setLoading] = useState(true)
@@ -21,20 +22,18 @@ const ItemListContainer = ({ greeting, mostrarCantidad }) => {
             .finally(() => setLoading(false))
     }, [])
 
-    console.log(productos);
 
     return (
 
         <>
             <h1>{greeting}</h1>
-            <ItemList />
-
-            {/* <div className="container-items">
+            {loading ? <h1>Cargando...</h1>
+                :
+                <div className='container-cards'>
+                    <ItemList className='ItemList' items={productos} />
+                </div>
                 
-                <ItemCount stock={5} initial={1} onAdd={mostrarCantidad} />
-            </div> */}
-
-
+            }
 
         </>
 

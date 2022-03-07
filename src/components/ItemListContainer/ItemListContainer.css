@@ -7,7 +7,8 @@
 }
 
 
-.container-items{
+
+/* .container-items{
     width: 300px;
     height: 350px;
     background: transparent;
@@ -19,13 +20,27 @@
     margin-top: 10px !important;
     position: relative;
     display: flex;
+    tex;t-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto
+    color: var(--background-color-navbar);
+    
+} */
+
+.container-cards{
+    
+    display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
-    color: var(--background-color-navbar);
-    
+    margin: 0 auto
 }
+
+.card-img-top{
+    width: 50% !important;
+}
+
 
 .container-items h1{
 
