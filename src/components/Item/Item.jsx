@@ -8,23 +8,24 @@ const Item = ({ category, picture, title, price, mostrarCantidad, stock }) => {
     return (
 
         <>
-                <Card>
-                    <Card.Header>
-                        <Card.Title>{title}</Card.Title>
-                    </Card.Header>
-                    <Card.Img variant="top" src={picture} />
-                    <Card.Body>
-                        Precio:
-                        ${price}
-                        <Card.Text>
-                            Disponibles: {stock}
-                        </Card.Text>
-                    </Card.Body>
-                    <Card.Footer>
-                        <Button variant="primary"> Ver detalles</Button>
-                    </Card.Footer>
-                    {/* <ItemCount stock={stock} initial={1} onAdd={mostrarCantidad} /> */}
-                </Card>
+
+            <Card>
+                <Card.Header>
+                    <Card.Title>{title}</Card.Title>
+                </Card.Header>
+                <Card.Img variant="top" src={picture} />
+                <Card.Body>
+                    Disponibles: {stock}
+                    <Card.Text>
+                        $ {price}
+                    </Card.Text>
+                    <Button className='btn-details' variant="primary"> Ver detalles</Button>
+                </Card.Body>
+                <ItemCount stock={stock} initial={1} onAdd={mostrarCantidad} />
+            </Card>
+
+
+
 
         </>
 

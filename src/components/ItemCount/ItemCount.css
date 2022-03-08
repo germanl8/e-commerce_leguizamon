@@ -4,7 +4,7 @@
     --second-color:#00feef;
     --third-color:#00f894;
     --font-logo: Quicksand Bold;
-    --color-button: rgb(238, 237, 237);
+    --color-button: #007272;
 }
 
 .container-addcart{
@@ -41,7 +41,7 @@
     align-items: center;
     justify-content: center;
     height: 40px;
-    border-color: var(--color-button);
+    border-color: rgb(238, 237, 237);
     border-radius: 4px;
     color:var(--background-color-navbar);
     background-color:transparent;
@@ -67,7 +67,7 @@
     border-top-right-radius: 0px !important;
     border-bottom-right-radius: 0px !important;
     border-right: none !important;
-    color: #0d6efd !important;
+    color: var(--color-button) !important;
 }
 
 .addCount{
@@ -75,8 +75,9 @@
     border-top-left-radius: 0px !important;
     border-bottom-left-radius: 0px !important;
     border-left: none !important;
-    color: #0d6efd !important;
+    color: var(--color-button) !important;
 }
+
 
 
 .btn-addCart{
@@ -89,6 +90,15 @@
     color:white;
     font-size: 15px;
     height: 40px;
-    background-color: #0d6efd;
+    background-color: var(--color-button);
    
+}
+
+.btn-addCart:hover{
+    width: 310px;
+    height: 45px;
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+    font-size: 17px;
+    transition: 200ms;
 }
