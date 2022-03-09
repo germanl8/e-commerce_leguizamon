@@ -1,28 +1,41 @@
-import { Card, Button, Carousel } from 'react-bootstrap';
+import { Card, Button } from 'react-bootstrap';
 import '../Item/Item.css';
 import ItemCount from "../ItemCount/ItemCount"
 
 
-const Item = ({ category, picture, title, price, mostrarCantidad, stock }) => {
+const Item = ({ prod }) => {
 
     return (
 
         <>
+            <div
+                key={prod.id}
+            >
 
-            <Card>
-                <Card.Header>
-                    <Card.Title>{title}</Card.Title>
-                </Card.Header>
-                <Card.Img variant="top" src={picture} />
-                <Card.Body>
-                    Disponibles: {stock}
-                    <Card.Text>
-                        $ {price}
-                    </Card.Text>
-                    <Button className='btn-details' variant="primary"> Ver detalles</Button>
-                </Card.Body>
-                <ItemCount stock={stock} initial={1} onAdd={mostrarCantidad} />
-            </Card>
+                <Card>
+                    <Card.Header>
+                        <Card.Title>{`${prod.title}`}</Card.Title>
+                    </Card.Header>
+                    
+                    <Card.Body>
+                    <Card.Img variant="top" src={`${prod.pictureUrl}`} />
+                        
+                        <Card.Text className='stock'>
+                        Disponibles: {`${prod.stock}`} <br/>
+                        </Card.Text>
+                        <Card.Text>
+                            $ {`${prod.price}`}
+                        </Card.Text>
+                    </Card.Body>
+                    <Card.Footer>
+                        <Button className='btn-details' variant="primary"> Ver detalles</Button>
+
+                    </Card.Footer>
+
+                    {/* <ItemCount stock={`${prod.stock}`} initial={1} /> */}
+                </Card>
+
+            </div>
 
 
 

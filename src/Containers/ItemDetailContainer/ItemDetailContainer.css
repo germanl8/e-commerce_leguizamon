@@ -1,0 +1,139 @@
+:root{
+    --letter-color: #F0F7F5;
+    --background-color-navbar:#263238;
+    --second-color:#00feef;
+    --third-color:#00f894;
+    --font-logo: 'Quicksand', sans-serif;
+}
+
+.container-itemDetail{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 75%; 
+    position: relative !important;
+    border-style: solid;
+    border-color: rgb(238, 237, 237);
+    border-width: 1px;
+    border-radius: 10px;
+    
+}
+.container-header h1{
+    margin-top: 15px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container-cards{
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    z-index: 1000;
+   
+}
+
+.card-img-top{
+    width: 50% !important;
+}
+
+
+.container-items h1{
+
+    position: absolute;
+    
+
+}
+
+/* ------------spinner-------------- */
+
+.wrapper{
+  width:200px;
+  height:60px;
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+}
+.circle{
+  width:20px;
+  height:20px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: var(--background-color-navbar);
+  left:15%;
+  transform-origin: 50%;
+  animation: circle .5s alternate infinite ease;
+}
+
+@keyframes circle{
+  0%{
+      top:60px;
+      height:5px;
+      border-radius: 50px 50px 25px 25px;
+      transform: scaleX(1.7);
+  }
+  40%{
+      height:20px;
+      border-radius: 50%;
+      transform: scaleX(1);
+  }
+  100%{
+      top:0%;
+  }
+}
+.circle:nth-child(2){
+  left:45%;
+  animation-delay: .2s;
+}
+.circle:nth-child(3){
+  left:auto;
+  right:15%;
+  animation-delay: .3s;
+}
+.shadow{
+  width:20px;
+  height:4px;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,.5);
+  position: absolute;
+  top:62px;
+  transform-origin: 50%;
+  z-index: -1;
+  left:15%;
+  filter: blur(1px);
+  animation: shadow .5s alternate infinite ease;
+}
+
+@keyframes shadow{
+  0%{
+      transform: scaleX(1.5);
+  }
+  40%{
+      transform: scaleX(1);
+      opacity: .7;
+  }
+  100%{
+      transform: scaleX(.2);
+      opacity: .4;
+  }
+}
+.shadow:nth-child(4){
+  left: 45%;
+  animation-delay: .2s
+}
+.shadow:nth-child(5){
+  left:auto;
+  right:15%;
+  animation-delay: .3s;
+}
+.wrapper span{
+  position: absolute;
+  top:75px;
+  font-family: 'Lato';
+  font-size: 20px;
+  letter-spacing: 12px;
+  color: var(--background-color-navbar);
+  left:15%;
+}

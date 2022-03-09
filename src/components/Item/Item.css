@@ -6,6 +6,7 @@
     --font-logo: Quicksand Bold;
 }
 
+
 .card{
     display: inline-block !important;
     margin: 20px;
@@ -15,7 +16,6 @@
     border-color: rgb(238, 237, 237);
     border-width: 1px;
     border-radius: 10px;
-    border-bottom: none !important;
     margin-bottom: 0px !important;
     width: 300px !important;
     
@@ -43,10 +43,10 @@
 .btn-details{
     display: flex !important;
     margin: 0 auto;
-    margin-top: 15px;
     background-color: white !important;
     color: #007272 !important;
     border-color: #007272 !important;
+   
 
 }
 
@@ -59,4 +59,15 @@
     margin-bottom: 0px;
     font-weight: bold;
     font-size: 20px;
+    
+}
+
+.stock{
+    margin-top: 20px !important;
+    font-size: 13px !important;
+    font-weight:normal;
+}
+
+.card-img-top{
+    width: 70% !important;
 }
