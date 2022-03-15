@@ -1,9 +1,10 @@
 import React from 'react';
-import './NavBar.css';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import Logo from "./img/logo.png";
 import CartWidget from '../CartWidget/CartWidget';
+import './NavBar.css';
 // import { Navbar, Container, Nav, NavDropdown, Form, FormControl, Button } from "react-bootstrap";
 
 
@@ -22,12 +23,21 @@ function NavBar() {
                 </form>
                 <div className='nav-menu'>
                     <ul>
-                        <li><a href='##'>Inicio</a></li>
-                        <li><a href='##'>Categorías</a></li>
-                        <li><a href='##'>Ofertas</a></li>
-                        <li className='li-float-right'><a href='##'>Registrarse</a></li>
-                        <li className='li-float-right'><a href='##'>Ingresar</a></li>
-                        <li className='li-float-right'><a href="##"><CartWidget/></a></li>
+                        {/* <li><a href='/'>Inicio</a></li> */}
+                        <li><Link to="/">Inicio</Link></li>
+                        <li>
+                            <div className='dropdown'>
+                                <a href='##' className='dropbtn'>Categorías</a>
+                                <div className='dropdown-content'>
+                                    <Link to='/categoria/remera'>Remera</Link>
+                                    <Link to='/categoria/pantalon'>Pantalon</Link>
+                                </div>                                
+                            </div>
+                        </li>
+                        <li><Link to="">Ofertas</Link></li>
+                        <li className='li-float-right'><Link to="/">Registrarse</Link></li>
+                        <li className='li-float-right'><Link to="/">Iniciar Sesión</Link></li>
+                        <li className='li-float-right'><a href="##"><CartWidget /></a></li>
                     </ul>
 
                 </div>

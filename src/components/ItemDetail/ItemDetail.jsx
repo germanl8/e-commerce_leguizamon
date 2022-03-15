@@ -1,37 +1,11 @@
-import { Card, ListGroupItem, ListGroup } from 'react-bootstrap';
 import ItemCount from '../ItemCount/ItemCount';
 import '../ItemDetail/ItemDetail.css';
 
 import './ItemDetail.css'
 
 const ItemDetail = ({ producto }) => {
+
   return (
-
-
-
-
-    // <Card style={{ width: '18rem' }}>
-    //   <Card.Img variant="top" src={`${producto.pictureUrl}`} />
-    //   <Card.Body>
-    //     <Card.Title>{producto.title}</Card.Title>
-    //     <Card.Text>
-    //       Remera blanca clásica 100% algodón.
-    //     </Card.Text>
-    //   </Card.Body>
-    //   <Card.Body>
-    //     <ListGroup className="list-group-flush">
-    //       <ListGroupItem>Categoría: {producto.category}</ListGroupItem>
-    //       <ListGroupItem>$ {producto.price}</ListGroupItem>
-    //       <ListGroupItem>{producto.description}</ListGroupItem>
-    //       <ListGroupItem>Talles: {producto.size}</ListGroupItem>
-    //       <ListGroupItem>Disponibles: {producto.stock}</ListGroupItem>.
-    //     </ListGroup>
-    //   </Card.Body>
-    //   <ItemCount stock={producto.stock} initial={1} />
-
-    // </Card>
-
-
 
 
     <>

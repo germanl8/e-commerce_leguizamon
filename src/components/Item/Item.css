@@ -40,6 +40,10 @@
    
 }
 
+.card-footer a{
+    text-decoration: none;
+}
+
 .btn-details{
     display: flex !important;
     margin: 0 auto;

@@ -17,14 +17,12 @@ function App() {
 
         <NavBar></NavBar>
 
-        <ItemListContainer greeting={'Bienvenido a Click&Go'} />
-        <ItemDetailContainer></ItemDetailContainer>
-
-        {/* <Routes>
-          <Route path='/' element={<ItemListContainer greeting={'Bienvenido a Click&Go'} />} />
-          <Route path='/detalle' element={<ItemDetailContainer />} />
-          <Route path='/*' element={<Navigate to='/' replace />} />
-        </Routes> */}
+        <Routes>
+          <Route path='/Inicio' element={<ItemListContainer greeting={'Bienvenido a Click&Go'} />} />
+          <Route path='/categoria/:categoriaId' element={<ItemListContainer />} />
+          <Route path='/detalle/:detalleId' element={<ItemDetailContainer />} />
+          <Route path='/*' element={<Navigate to='/Inicio' replace />} />
+        </Routes>
 
 
       </div>
