@@ -13,12 +13,16 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
+    /* margin: 50px; */
+    width: 50%;
+    margin: 30px;
     
 }
 
 .container-img img{
-    width: 500px !important;
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
 }
 
 .container-detail{
@@ -27,8 +31,10 @@
     text-align: left;
     align-items: left;
     justify-content: left;
-    margin: 0 auto;
-    margin-top: 50px;
+    width: 50%;
+    margin: 30px;
+    padding-left: 125px;
+
     
     
 }
