@@ -1,9 +1,14 @@
+import { useState } from 'react';
 import ItemCount from '../ItemCount/ItemCount';
 import '../ItemDetail/ItemDetail.css';
-
 import './ItemDetail.css'
 
-const ItemDetail = ({ producto }) => {
+const ItemDetail = ({ producto, handleInter }) => {
+
+  const onAdd = (cant) => {
+    console.log(cant);
+  }
+
 
   return (
 
@@ -26,12 +31,8 @@ const ItemDetail = ({ producto }) => {
               <li>Disponible: ({producto.stock}) unidades</li>
               <li>Talles: {producto.size}</li>
             </ul>
-            <ItemCount stock={producto.stock} initial={1}></ItemCount>
+            <ItemCount stock={producto.stock} initial={1} onAdd= { onAdd } cart={ handleInter }></ItemCount>
           </div>
-
-       
-
-
       </div>
     </>
 

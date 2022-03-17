@@ -12,14 +12,7 @@ const ItemList = ({ items }) => {
 
             }
 
-            {/* {items.map((prod) => <Item key={prod.id} prod={prod} />
-
-            )
-
-            } */}
-
         </div>
-        // <Item></Item>
 
     )
 

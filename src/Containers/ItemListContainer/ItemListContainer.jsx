@@ -42,7 +42,7 @@ const ItemListContainer = ({ greeting }) => {
     }, [categoriaId])
 
 
-    console.log(categoriaId);
+    // console.log(categoriaId);
 
 
     return (

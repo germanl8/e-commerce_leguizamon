@@ -33,7 +33,6 @@ const Item = ({ prod }) => {
                         </Link>
                     </Card.Footer>
 
-                    {/* <ItemCount stock={`${prod.stock}`} initial={1} /> */}
                 </Card>
 
             </div>

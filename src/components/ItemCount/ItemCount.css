@@ -94,6 +94,29 @@
    
 }
 
+.btn-buyingCart{
+
+    width: 300px;
+    border-radius: 3px;
+    border-color: rgb(238, 237, 237);
+    border-bottom-left-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    color:white;
+    font-size: 15px;
+    height: 40px;
+    background-color: red;
+
+}
+
+.btn-buyingCart:hover{
+    width: 310px;
+    height: 45px;
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+    font-size: 17px;
+    transition: 200ms;
+}
+
 .btn-addCart:hover{
     width: 310px;
     height: 45px;

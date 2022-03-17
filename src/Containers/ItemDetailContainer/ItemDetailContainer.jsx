@@ -12,16 +12,16 @@ const ItemDetailContainer = ({ greeting }) => {
     const [producto, setProducto] = useState({})
     const [loading, setLoading] = useState(true)
     const { detalleId } = useParams()
-    console.log(detalleId);
+    // console.log(detalleId);
 
     useEffect(() => {
         getFetch // llamada a la api
             .then((resp) => setProducto(resp.find(prod => prod.id === detalleId)))
             .catch(err => console.log(err)) //captura el error al romperse la app
             .finally(() => setLoading(false))
-    }, [])
+    }, [detalleId])
 
-    console.log(producto);
+    // console.log(producto);
 
     return (
 
