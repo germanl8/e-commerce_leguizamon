@@ -42,7 +42,7 @@ function NavBar() {
                         <li><Link to="">Ofertas</Link></li>
                         <li className='li-float-right'><Link to="/">Registrarse</Link></li>
                         <li className='li-float-right'><Link to="/">Iniciar Sesión</Link></li>
-                        <li className='li-float-right'><a href="##"><CartWidget /></a></li>
+                        <li className='li-float-right'><Link to="/cart"><CartWidget /></Link></li>
                     </ul>
 
                 </div>
